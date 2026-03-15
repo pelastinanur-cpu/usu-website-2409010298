@@ -572,3 +572,14 @@ body.dark-mode #berita {
 #navbar.navbar-scroll .navbar-container {
   padding: 10px 24px;
 }
+
+/* ============================================= 
+    FOTO REKTOR USU 
+   ============================================= */
+
+.foto-rektor img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}

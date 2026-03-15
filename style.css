@@ -1,5 +1,5 @@
 /* ============================================= 
-    UNIVERSITAS MUHAMMADIYAH SUMATERA UTARA — STYLE.CSS 
+    UNIVERSITAS SUMATERA UTARA — STYLE.CSS 
     ============================================= */
 
 /* CSS VARIABLES — palet warna utama USU */
@@ -574,7 +574,7 @@ body.dark-mode #berita {
 }
 
 /* ============================================= 
-    FOTO REKTOR USU 
+    GAMBAR
    ============================================= */
 
 .foto-rektor img {
@@ -582,4 +582,105 @@ body.dark-mode #berita {
   height: 100%;
   object-fit: cover;
   border-radius: 50%;
+}
+
+.kartu-ikon {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px 8px 0 0;
+  margin-bottom: 16px;
+}
+
+.kartu-ikon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.program-kartu {
+  overflow: hidden;
+  padding: 0;
+}
+
+.program-kartu h3,
+.program-kartu p,
+.program-kartu a {
+  padding: 0 20px;
+}
+
+.program-kartu .kartu-judul {
+  padding-top: 16px;
+}
+
+.program-kartu .kartu-link {
+  display: block;
+  padding-bottom: 20px;
+}
+
+.berita-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.berita-kartu {
+  background-color: var(--putih);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.berita-kartu:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.12);
+}
+
+.berita-gambar {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.berita-gambar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.berita-kartu:hover .berita-gambar img {
+  transform: scale(1.05);
+}
+
+.berita-isi {
+  padding: 20px;
+}
+
+.berita-tanggal {
+  font-size: 12px;
+  color: var(--abu-muda);
+}
+
+.berita-judul {
+  font-size: 15px;
+  font-weight: 700;
+  margin: 8px 0 12px;
+  line-height: 1.5;
+  color: var(--abu-gelap);
+}
+
+.berita-link {
+  color: var(--hijau-muda);
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.berita-link:hover {
+  color: var(--hijau-tua);
+  text-decoration: underline;
 }
